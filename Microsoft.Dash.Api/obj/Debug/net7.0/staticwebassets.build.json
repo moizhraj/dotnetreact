@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CX4q2q4B6IjwtpMdKKq430QrCYbsIdHMsX60NF5zd98=",
+  "Source": "Microsoft.Dash.Api",
+  "BasePath": "_content/Microsoft.Dash.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
