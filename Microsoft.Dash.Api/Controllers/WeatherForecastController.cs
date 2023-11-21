@@ -1,10 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Dash.Api.Interfaces;
 
 namespace Microsoft.Dash.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ControllerBase, IWeatherForecastController
     {
         private static readonly string[] Summaries = new[]
         {
