@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Dash.Api.Interfaces;
+using Microsoft.Dash.Api.Models;
 
 namespace Microsoft.Dash.Api.Controllers
 {

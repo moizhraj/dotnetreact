@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import './NavMenu.css';
+import '../styles/NavMenu.css';
 
 const NavMenu = () => {
     const [collapsed, setCollapsed] = useState<boolean>(true);
@@ -22,7 +22,7 @@ const NavMenu = () => {
                                 <NavLink tag={Link} className="text-dark" to="/counter">Counter</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/fetch-data">Fetch data</NavLink>
+                                <NavLink tag={Link} className="text-dark" to="/weather-forecast">Fetch data</NavLink>
                             </NavItem>
                         </ul>
                     </Collapse>

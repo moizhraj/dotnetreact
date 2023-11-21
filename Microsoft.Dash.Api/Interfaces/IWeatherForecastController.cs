@@ -1,4 +1,6 @@
-﻿namespace Microsoft.Dash.Api.Interfaces
+﻿using Microsoft.Dash.Api.Models;
+
+namespace Microsoft.Dash.Api.Interfaces
 {
     public interface IWeatherForecastController : IBaseController
     {

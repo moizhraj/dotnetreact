@@ -1,22 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Forecast } from '../types/Forecast';
+import WeatherService from '../services/WeatherService';
 
-interface Forecast {
-    date: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary?: string;
-};
-
-const FetchData = () => {
+const WeatherForecast = () => {
     const [loading, setLoading] = useState<boolean>(true);
-    const [forecasts, setForecasts] = useState<Forecast[]>([]);
+    const [forecasts, setForecasts] = useState<Array<Forecast>>([]);
 
     // Takes the place of componentDidMount()
     useEffect(() => {
         const populateWeatherData = async () => {
-            const response = await fetch('weatherforecast');
-            const data = await response.json();
-            setForecasts(data);
+            const response = await WeatherService.getAll(); // await fetch('weatherforecast');
+            // const data = await response.json();
+            setForecasts(response.data);
             setLoading(false);
         }
 
@@ -61,4 +56,4 @@ const renderForecastsTable = (forecasts: Forecast[]) => {
     );
 }
 
-export { FetchData };
+export { WeatherForecast };

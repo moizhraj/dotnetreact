@@ -1,4 +1,4 @@
-namespace Microsoft.Dash.Api
+namespace Microsoft.Dash.Api.Models
 {
     public class WeatherForecast
     {
